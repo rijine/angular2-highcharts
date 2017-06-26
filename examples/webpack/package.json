@@ -1,5 +1,5 @@
 {
-  "name": "angular2-higcharts_examples",
+  "name": "@kiwigrid/ngx-highcharts_examples",
   "version": "1.0.0",
   "devDependencies": {
     "typescript": "^2.0.1",
