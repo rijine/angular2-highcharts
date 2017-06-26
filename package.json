@@ -5,7 +5,8 @@
   "scripts": {
     "watch": "ntsc -w",
     "build": "rm -rf dist && ngc",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
