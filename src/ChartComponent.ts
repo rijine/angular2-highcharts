@@ -32,7 +32,6 @@ export class ChartComponent {
     chart: any;
     element: ElementRef;
     highchartsService : HighchartsService;
-    test: any;
 
     private userOpts: any;
     private baseOpts: any;
