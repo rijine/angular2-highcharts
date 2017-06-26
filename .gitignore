@@ -3,3 +3,4 @@ node_modules
 .idea
 typings
 src/*.ngfactory.ts
+yarn-error.log
