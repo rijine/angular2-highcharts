@@ -22,7 +22,6 @@ export declare class ChartComponent {
     chart: any;
     element: ElementRef;
     highchartsService: HighchartsService;
-    test: any;
     private userOpts;
     private baseOpts;
     type: string;
