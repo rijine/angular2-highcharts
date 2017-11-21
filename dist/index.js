@@ -26,8 +26,9 @@ var CHART_DIRECTIVES = [
     ChartYAxisComponent_1.ChartYAxisComponent
 ];
 var ChartModule = (function () {
-    var ChartModule = ChartModule_1 = function ChartModule() {
-    };
+    function ChartModule() {
+    }
+    ChartModule_1 = ChartModule;
     ChartModule.forRoot = function (highchartsStatic) {
         var highchartsModules = [];
         for (var _i = 1; _i < arguments.length; _i++) {
