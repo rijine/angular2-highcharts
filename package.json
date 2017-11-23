@@ -19,7 +19,7 @@
     "highstock",
     "highmaps"
   ],
-  "author": "Eugene Gluhotorenko",
+  "author": "Norman Leyda",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kiwigrid/angular2-highcharts/issues"
