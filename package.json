@@ -1,6 +1,6 @@
 {
-  "name": "@kiwigrid/ngx-highcharts",
-  "version": "0.6.1",
+  "name": "@rijine/ngx-highcharts",
+  "version": "0.7.1",
   "description": "Highcharts for your Angular2 project",
   "scripts": {
     "watch": "ntsc -w",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiwigrid/angular2-highcharts"
+    "url": "git+https://github.com/rijine/angular2-highcharts.git"
   },
   "keywords": [
     "angular",
@@ -19,12 +19,12 @@
     "highstock",
     "highmaps"
   ],
-  "author": "Norman Leyda",
+  "author": "Rijin E",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kiwigrid/angular2-highcharts/issues"
+    "url": "https://github.com/rijine/angular2-highcharts/issues"
   },
-  "homepage": "https://github.com/kiwigrid/angular2-highcharts#readme",
+  "homepage": "https://github.com/rijine/angular2-highcharts#readme",
   "devDependencies": {
     "@angular/common": "^2.4.7",
     "@angular/compiler": "^2.4.7",
@@ -52,5 +52,9 @@
   "dependencies": {
     "@types/highcharts": "^5.0.12",
     "highcharts": "^6.0.3"
+  },
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
   }
 }

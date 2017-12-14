@@ -50,8 +50,8 @@
       'ts':                         'npm:plugin-typescript@4.0.10/lib/plugin.js',
       'typescript':                 'npm:typescript@2.0.2/lib/typescript.js',
 
-      'angular2-highcharts':        'https://rawgit.com/gevgeny/angular2-highcharts/92352870467648401f595c945dce38b9601309ad/dist',
-      'highcharts':                 'https://cdn.rawgit.com/highcharts/highcharts-dist/v5.0.7'
+      'angular2-highcharts':        'https://rawgit.com/rijine/angular2-highcharts/92352870467648401f595c945dce38b9601309ad/dist',
+      'highcharts':                 'https://github.highcharts.com/v6.0.3/'
 
     },
     // packages tells the System loader how to load when no filename and/or no extension

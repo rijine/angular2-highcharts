@@ -52,4 +52,4 @@ var HighchartsServiceMock = (function () {
     return HighchartsServiceMock;
 }());
 exports.HighchartsServiceMock = HighchartsServiceMock;
-//# sourceMappingURL=Mocks.js.map
+//# sourceMappingURL=mocks.js.map

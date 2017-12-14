@@ -1,4 +1,4 @@
-import { Input, ElementRef, Component, Output, EventEmitter, ContentChild } from '@angular/core';
+import { Input, ElementRef, Component, Output, EventEmitter, ContentChild, NgZone } from '@angular/core';
 
 import { ChartSeriesComponent } from './chart-series.component';
 import { ChartXAxisComponent } from './chart-x-axis.component';
@@ -29,6 +29,7 @@ export class ChartComponent {
     @Output() selection = new EventEmitter<ChartEvent>();
     @Input() tooltipFormatter;
 
+    zone: NgZone;
     chart: any;
     element: ElementRef;
     highchartsService : HighchartsService;
@@ -43,8 +44,10 @@ export class ChartComponent {
 
     private init() {
         if (this.userOpts && this.baseOpts) {
-            this.chart = initChart(this.highchartsService, this.userOpts, this.baseOpts, this.type);
-            this.create.emit(this.chart);
+            this.zone.runOutsideAngular(() => {
+                this.chart = initChart(this.highchartsService, this.userOpts, this.baseOpts, this.type);
+                this.create.emit(this.chart);
+            });
         }
     }
 
@@ -53,8 +56,9 @@ export class ChartComponent {
         this.init();
     }
 
-    constructor(element: ElementRef, highchartsService : HighchartsService) {
+    constructor(element: ElementRef, highchartsService: HighchartsService, zone: NgZone) {
         this.element = element;
         this.highchartsService = highchartsService;
+        this.zone = zone;
     }
 }

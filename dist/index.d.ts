@@ -1,10 +1,10 @@
 import { ModuleWithProviders } from '@angular/core';
-import { ChartComponent } from './ChartComponent';
-import { ChartSeriesComponent } from './ChartSeriesComponent';
-import { ChartPointComponent } from './ChartPointComponent';
-import { ChartXAxisComponent } from './ChartXAxisComponent';
-import { ChartYAxisComponent } from './ChartYAxisComponent';
-import { HighchartsStatic } from './HighchartsService';
+import { ChartComponent } from './chart.component';
+import { ChartSeriesComponent } from './chart-series.component';
+import { ChartPointComponent } from './chart-point.component';
+import { ChartXAxisComponent } from './chart-x-axis.component';
+import { ChartYAxisComponent } from './chart-y-axis.component';
+import { HighchartsStatic } from './highcharts.service';
 export declare class ChartModule {
     static forRoot(highchartsStatic: HighchartsStatic, ...highchartsModules: Array<Function>): ModuleWithProviders;
 }

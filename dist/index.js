@@ -7,23 +7,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var ChartComponent_1 = require("./ChartComponent");
-exports.ChartComponent = ChartComponent_1.ChartComponent;
-var ChartSeriesComponent_1 = require("./ChartSeriesComponent");
-exports.ChartSeriesComponent = ChartSeriesComponent_1.ChartSeriesComponent;
-var ChartPointComponent_1 = require("./ChartPointComponent");
-exports.ChartPointComponent = ChartPointComponent_1.ChartPointComponent;
-var ChartXAxisComponent_1 = require("./ChartXAxisComponent");
-exports.ChartXAxisComponent = ChartXAxisComponent_1.ChartXAxisComponent;
-var ChartYAxisComponent_1 = require("./ChartYAxisComponent");
-exports.ChartYAxisComponent = ChartYAxisComponent_1.ChartYAxisComponent;
-var HighchartsService_1 = require("./HighchartsService");
+var chart_component_1 = require("./chart.component");
+exports.ChartComponent = chart_component_1.ChartComponent;
+var chart_series_component_1 = require("./chart-series.component");
+exports.ChartSeriesComponent = chart_series_component_1.ChartSeriesComponent;
+var chart_point_component_1 = require("./chart-point.component");
+exports.ChartPointComponent = chart_point_component_1.ChartPointComponent;
+var chart_x_axis_component_1 = require("./chart-x-axis.component");
+exports.ChartXAxisComponent = chart_x_axis_component_1.ChartXAxisComponent;
+var chart_y_axis_component_1 = require("./chart-y-axis.component");
+exports.ChartYAxisComponent = chart_y_axis_component_1.ChartYAxisComponent;
+var highcharts_service_1 = require("./highcharts.service");
 var CHART_DIRECTIVES = [
-    ChartComponent_1.ChartComponent,
-    ChartSeriesComponent_1.ChartSeriesComponent,
-    ChartPointComponent_1.ChartPointComponent,
-    ChartXAxisComponent_1.ChartXAxisComponent,
-    ChartYAxisComponent_1.ChartYAxisComponent
+    chart_component_1.ChartComponent,
+    chart_series_component_1.ChartSeriesComponent,
+    chart_point_component_1.ChartPointComponent,
+    chart_x_axis_component_1.ChartXAxisComponent,
+    chart_y_axis_component_1.ChartYAxisComponent
 ];
 var ChartModule = (function () {
     function ChartModule() {
@@ -40,7 +40,7 @@ var ChartModule = (function () {
         return {
             ngModule: ChartModule_1,
             providers: [
-                { provide: HighchartsService_1.HighchartsStatic, useValue: highchartsStatic }
+                { provide: highcharts_service_1.HighchartsStatic, useValue: highchartsStatic }
             ]
         };
     };
