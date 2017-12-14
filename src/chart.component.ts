@@ -11,6 +11,7 @@ import { createBaseOpts } from './create-base-opts';
 @Component({
     selector: 'chart',
     template: '&nbsp;',
+    styles: [':host {display: block;}'],
     providers: [HighchartsService],
 })
 export class ChartComponent implements AfterViewInit, OnDestroy {
