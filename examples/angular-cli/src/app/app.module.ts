@@ -1,11 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { ChartModule } from '@rijine/ngx-highcharts';
 
 import { AppComponent } from './app.component';
 
-import { ChartModule } from 'angular2-highcharts';
 
 @NgModule({
   declarations: [
@@ -13,12 +11,7 @@ import { ChartModule } from 'angular2-highcharts';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    ChartModule.forRoot(
-        require('highcharts/highstock'),
-        require('highcharts/modules/exporting')
-    )
+    ChartModule.forRoot(require('highcharts/highstock'))
   ],
   providers: [],
   bootstrap: [AppComponent]

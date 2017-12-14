@@ -60,12 +60,21 @@ function main() {
                 return testing_1.TestBed.createComponent(TestComponent);
             });
         };
-        it('should create simple chart object', function (done) {
+        it('should create/destroy simple chart object', function (done) {
             create('<chart [options]="options"></chart>').then(function (fixture) {
                 fixture.componentInstance.options = ['options'];
-                spyOn(highchartsServiceMock.getHighchartsStatic(), 'Chart');
+                var RealChart = highchartsServiceMock.getHighchartsStatic().Chart;
+                var destroySpy;
+                var chartSpy = spyOn(highchartsServiceMock.getHighchartsStatic(), 'Chart')
+                    .and.callFake(function (opts) {
+                    var chart = new RealChart(opts);
+                    destroySpy = spyOn(chart, 'destroy');
+                    return chart;
+                });
                 fixture.detectChanges();
-                expect(highchartsServiceMock.getHighchartsStatic().Chart).toHaveBeenCalled();
+                expect(chartSpy).toHaveBeenCalled();
+                fixture.destroy();
+                expect(destroySpy).toHaveBeenCalled();
                 done();
             });
         });

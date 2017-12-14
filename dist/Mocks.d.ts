@@ -7,6 +7,7 @@ export declare class ChartEventEmitter {
 }
 export declare class HighchartsChartObjectMock {
     constructor(_opts: any);
+    destroy(): void;
 }
 export declare class HighchartsServiceMock {
     getHighchartsStatic(): {

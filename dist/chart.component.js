@@ -55,6 +55,10 @@ var ChartComponent = (function () {
         this.baseOpts = create_base_opts_1.createBaseOpts(this, this.series, this.series ? this.series.point : null, this.xAxis, this.yAxis, this.element.nativeElement);
         this.init();
     };
+    ChartComponent.prototype.ngOnDestroy = function () {
+        if (this.chart && typeof this.chart.destroy === 'function')
+            this.chart.destroy();
+    };
     __decorate([
         core_1.ContentChild(chart_series_component_1.ChartSeriesComponent),
         __metadata("design:type", chart_series_component_1.ChartSeriesComponent)

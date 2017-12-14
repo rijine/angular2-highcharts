@@ -33,6 +33,7 @@ var HighchartsChartObjectMock = (function () {
     function HighchartsChartObjectMock(_opts) {
         opts = _opts;
     }
+    HighchartsChartObjectMock.prototype.destroy = function () { };
     return HighchartsChartObjectMock;
 }());
 exports.HighchartsChartObjectMock = HighchartsChartObjectMock;

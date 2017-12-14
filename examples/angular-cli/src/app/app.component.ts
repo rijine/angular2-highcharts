@@ -2,18 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <h1>
-      {{title}}
-      <chart [options]="options"></chart>
-
-    </h1>
-  `,
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
-  constructor() {
+  title = 'app';
+  options: Object;
+  constructor(){
     this.options = {
       title : { text : 'simple chart' },
       series: [{
@@ -21,5 +16,4 @@ export class AppComponent {
       }]
     };
   }
-  options: Object;
 }
