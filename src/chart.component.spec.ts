@@ -1,12 +1,12 @@
 import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { ChartComponent } from './ChartComponent';
-import { ChartPointComponent } from './ChartPointComponent';
-import { ChartSeriesComponent } from './ChartSeriesComponent';
-import { ChartXAxisComponent } from './ChartXAxisComponent';
-import { ChartYAxisComponent } from './ChartYAxisComponent';
-import { HighchartsService } from './HighchartsService';
-import { HighchartsServiceMock, HighchartsChartObjectMock, ChartEventEmitter } from './Mocks';
+import { ChartComponent } from './chart.component';
+import { ChartPointComponent } from './chart-point.component';
+import { ChartSeriesComponent } from './chart-series.component';
+import { ChartXAxisComponent } from './chart-x-axis.component';
+import { ChartYAxisComponent } from './chart-y-axis.component';
+import { HighchartsService } from './highcharts.service';
+import { HighchartsServiceMock, HighchartsChartObjectMock, ChartEventEmitter } from './mocks';
 
 export function main() {
     describe('ChartComponent', () => {

@@ -1,12 +1,12 @@
 import { Input, ElementRef, Component, Output, EventEmitter, ContentChild } from '@angular/core';
 
-import { ChartSeriesComponent } from './ChartSeriesComponent';
-import { ChartXAxisComponent } from './ChartXAxisComponent';
-import { ChartYAxisComponent } from './ChartYAxisComponent';
-import { HighchartsService } from './HighchartsService';
-import { ChartEvent } from './ChartEvent';
-import { initChart } from './initChart';
-import { createBaseOpts } from './createBaseOpts';
+import { ChartSeriesComponent } from './chart-series.component';
+import { ChartXAxisComponent } from './chart-x-axis.component';
+import { ChartYAxisComponent } from './chart-y-axis.component';
+import { HighchartsService } from './highcharts.service';
+import { ChartEvent } from './chart-event.model';
+import { initChart } from './init-chart';
+import { createBaseOpts } from './create-base-opts';
 
 @Component({
     selector: 'chart',

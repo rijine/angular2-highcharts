@@ -1,4 +1,4 @@
-import { ChartEvent } from './ChartEvent';
+import { ChartEvent } from './chart-event.model';
 
 const chartEvents = [
     //'click', works by default as a native DOM click
