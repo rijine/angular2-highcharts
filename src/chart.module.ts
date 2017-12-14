@@ -1,11 +1,11 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
-import { ChartComponent } from './chart.component';
-import { ChartSeriesComponent } from './chart-series.component';
-import { ChartPointComponent } from './chart-point.component';
-import { ChartXAxisComponent } from './chart-x-axis.component';
-import { ChartYAxisComponent } from './chart-y-axis.component';
-import { HighchartsStatic } from './highcharts.service'
+import { ChartComponent } from './components/chart.component';
+import { ChartSeriesComponent } from './components/chart-series.component';
+import { ChartPointComponent } from './components/chart-point.component';
+import { ChartXAxisComponent } from './components/chart-x-axis.component';
+import { ChartYAxisComponent } from './components/chart-y-axis.component';
+import { HighchartsStatic } from './services/highcharts.service'
 
 const CHART_DIRECTIVES: any[] = [
     ChartComponent,

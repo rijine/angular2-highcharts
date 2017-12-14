@@ -1,7 +1,7 @@
 {
   "name": "@rijine/ngx-highcharts",
-  "version": "0.7.1",
-  "description": "Highcharts for your Angular2 project",
+  "version": "0.7.2",
+  "description": "Highcharts for your Angular2+ project",
   "scripts": {
     "watch": "ntsc -w",
     "build": "rm -rf dist && ngc",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rijine/angular2-highcharts.git"
+    "url": "git+https://github.com/rijine/ngx-highcharts.git"
   },
   "keywords": [
     "angular",
@@ -22,9 +22,9 @@
   "author": "Rijin E",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rijine/angular2-highcharts/issues"
+    "url": "https://github.com/rijine/ngx-highcharts/issues"
   },
-  "homepage": "https://github.com/rijine/angular2-highcharts#readme",
+  "homepage": "https://github.com/rijine/ngx-highcharts#readme",
   "devDependencies": {
     "@angular/common": "^2.4.7",
     "@angular/compiler": "^2.4.7",

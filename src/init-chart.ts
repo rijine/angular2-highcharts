@@ -1,4 +1,4 @@
-import { HighchartsService } from './highcharts.service';
+import { HighchartsService } from './services/highcharts.service';
 import { deepAssign } from './deep-assign';
 
 export function initChart(highchartsService : HighchartsService, userOpts, baseOpts, type : string) {

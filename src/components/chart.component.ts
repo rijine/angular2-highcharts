@@ -3,10 +3,10 @@ import { AfterViewInit, Input, ElementRef, Component, Output, OnDestroy, EventEm
 import { ChartSeriesComponent } from './chart-series.component';
 import { ChartXAxisComponent } from './chart-x-axis.component';
 import { ChartYAxisComponent } from './chart-y-axis.component';
-import { HighchartsService } from './highcharts.service';
-import { ChartEvent } from './chart-event.model';
-import { initChart } from './init-chart';
-import { createBaseOpts } from './create-base-opts';
+import { HighchartsService } from '../services/highcharts.service';
+import { ChartEvent } from '../models/chart-event.model';
+import { initChart } from '../init-chart';
+import { createBaseOpts } from '../create-base-opts';
 
 @Component({
     selector: 'chart',

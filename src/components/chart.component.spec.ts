@@ -5,8 +5,8 @@ import { ChartPointComponent } from './chart-point.component';
 import { ChartSeriesComponent } from './chart-series.component';
 import { ChartXAxisComponent } from './chart-x-axis.component';
 import { ChartYAxisComponent } from './chart-y-axis.component';
-import { HighchartsService } from './highcharts.service';
-import { HighchartsServiceMock, HighchartsChartObjectMock, ChartEventEmitter } from './mocks';
+import { HighchartsService } from '../services/highcharts.service';
+import { HighchartsServiceMock, HighchartsChartObjectMock, ChartEventEmitter } from '../mocks';
 
 export function main() {
     describe('ChartComponent', () => {
