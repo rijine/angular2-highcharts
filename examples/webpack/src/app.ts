@@ -1,7 +1,7 @@
 import '../../../node_modules/zone.js';
 import '../../../node_modules/reflect-metadata';
 
-import { Component, NgModule } from '../../../node_modules/@angular/core';
+import { Component, NgModule, DoCheck } from '../../../node_modules/@angular/core';
 import { JsonpModule } from '../../../node_modules/@angular/http';
 import { BrowserModule } from '../../../node_modules/@angular/platform-browser';
 import { platformBrowserDynamic } from '../../../node_modules/@angular/platform-browser-dynamic';
@@ -19,7 +19,7 @@ import { ChartModule } from '../../../index';
     selector: 'app',
 
     template: `
-        <h2>angular2-highcharts examples</h2>
+        <h2>angular2-highcharts examples {{counter}}</h2>
         <simple-chart-example></simple-chart-example>
         <chart-events-example></chart-events-example>
         <stock-chart-example></stock-chart-example>
@@ -28,8 +28,12 @@ import { ChartModule } from '../../../index';
         <highcharts-module-example></highcharts-module-example>
     `
 })
-class App {
-
+class App implements DoCheck {
+    counter = 0;
+    
+    ngDoCheck(){
+        this.counter++;
+    }
 }
 
 declare var require: any;

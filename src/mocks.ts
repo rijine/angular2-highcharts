@@ -42,3 +42,10 @@ export class HighchartsServiceMock {
         return highchartsStatic;
     }
 }
+
+@Injectable()
+export class ChartServiceMock {
+    init() {
+        return {};
+    }
+}

@@ -1,5 +1,5 @@
-import { HighchartsService } from './services/highcharts.service';
-import { deepAssign } from './deep-assign';
+/*import { HighchartsService } from './services/highcharts.service';
+import { deepAssign } from './services/deep-assign.service';
 
 export function initChart(highchartsService : HighchartsService, userOpts, baseOpts, type : string) {
     const Highcharts = highchartsService.getHighchartsStatic();
@@ -22,4 +22,4 @@ export function initChart(highchartsService : HighchartsService, userOpts, baseO
     const opts = deepAssign({}, baseOpts, userOpts);
 
     return new Highcharts[type](opts);
-}
+}*/
