@@ -1,4 +1,5 @@
-# @rijine/ngx-highcharts
+# @rijine/ngx-highcharts - No more active
+
 ##### This is a fork based on https://github.com/gevgeny/angular2-highcharts
 
 > Highcharts chart components for Angular apps. 👉 [Live Demo](http://plnkr.co/edit/AJwozFWVR7TkQZnt05dN?p=preview)
