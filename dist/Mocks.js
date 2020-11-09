@@ -53,4 +53,16 @@ var HighchartsServiceMock = (function () {
     return HighchartsServiceMock;
 }());
 exports.HighchartsServiceMock = HighchartsServiceMock;
+var ChartServiceMock = (function () {
+    function ChartServiceMock() {
+    }
+    ChartServiceMock.prototype.init = function () {
+        return {};
+    };
+    ChartServiceMock = __decorate([
+        core_1.Injectable()
+    ], ChartServiceMock);
+    return ChartServiceMock;
+}());
+exports.ChartServiceMock = ChartServiceMock;
 //# sourceMappingURL=mocks.js.map

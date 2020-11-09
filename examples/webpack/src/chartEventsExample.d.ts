@@ -5,5 +5,5 @@ export declare class ChartEventsExample {
     onSeriesMouseOver(e: any): void;
     onPointSelect(e: any): void;
     onMouseOver(e: any): void;
-    onTooltip(point: any): string;
+    tooltipFormatter: (e: any) => string;
 }

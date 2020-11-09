@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, NgZone } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { ChartComponent } from './chart.component';
 import { ChartPointComponent } from './chart-point.component';
@@ -6,11 +6,13 @@ import { ChartSeriesComponent } from './chart-series.component';
 import { ChartXAxisComponent } from './chart-x-axis.component';
 import { ChartYAxisComponent } from './chart-y-axis.component';
 import { HighchartsService } from '../services/highcharts.service';
-import { HighchartsServiceMock, HighchartsChartObjectMock, ChartEventEmitter } from '../mocks';
+import { ChartService } from '../services/chart.service';
+import { HighchartsServiceMock, HighchartsChartObjectMock, ChartEventEmitter, ChartServiceMock } from '../mocks';
 
 export function main() {
     describe('ChartComponent', () => {
-        let highchartsServiceMock : any;
+        let highchartsServiceMock: any;
+        let chartServiceMock: any;
 
         @Component({
             selector : 'test-component',
@@ -25,6 +27,8 @@ export function main() {
 
         beforeEach(() => {
             highchartsServiceMock = new HighchartsServiceMock();
+            chartServiceMock = new ChartServiceMock();
+
             TestBed.configureTestingModule({
                 declarations: [
                     TestComponent,
@@ -48,7 +52,8 @@ export function main() {
             }).overrideComponent(ChartComponent, {
                 set: {
                     providers: [
-                        { provide: HighchartsService, useValue: highchartsServiceMock }
+                        { provide: HighchartsService, useValue: highchartsServiceMock },
+                        { provide: ChartService, useValue: chartServiceMock }
                     ]
                 }
             }).compileComponents().then(() => {

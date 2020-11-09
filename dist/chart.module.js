@@ -7,12 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var chart_component_1 = require("./chart.component");
-var chart_series_component_1 = require("./chart-series.component");
-var chart_point_component_1 = require("./chart-point.component");
-var chart_x_axis_component_1 = require("./chart-x-axis.component");
-var chart_y_axis_component_1 = require("./chart-y-axis.component");
-var highcharts_service_1 = require("./highcharts.service");
+var chart_component_1 = require("./components/chart.component");
+var chart_series_component_1 = require("./components/chart-series.component");
+var chart_point_component_1 = require("./components/chart-point.component");
+var chart_x_axis_component_1 = require("./components/chart-x-axis.component");
+var chart_y_axis_component_1 = require("./components/chart-y-axis.component");
+var highcharts_service_1 = require("./services/highcharts.service");
 var CHART_DIRECTIVES = [
     chart_component_1.ChartComponent,
     chart_series_component_1.ChartSeriesComponent,
@@ -42,7 +42,8 @@ var ChartModule = (function () {
     ChartModule = ChartModule_1 = __decorate([
         core_1.NgModule({
             declarations: [CHART_DIRECTIVES],
-            exports: [CHART_DIRECTIVES]
+            exports: [CHART_DIRECTIVES],
+            providers: []
         })
     ], ChartModule);
     return ChartModule;

@@ -1,6 +1,6 @@
 import { ChartEvent } from './models/chart-event.model';
 
-const chartEvents = [
+/*const chartEvents = [
     //'click', works by default as a native DOM click
     'addSeries',
     'afterPrint',
@@ -51,8 +51,9 @@ const yAxisEvents = [
 
 const tooltipEvents = [
   'formatter'
-];
+];*/
 
+/*
 export function createBaseOpts(chartCmp, seriesCmp, pointCmp, xAxisCmp, yAxisCmp, element) {
     let opts: any = {
         chart : {
@@ -117,3 +118,4 @@ export function createBaseOpts(chartCmp, seriesCmp, pointCmp, xAxisCmp, yAxisCmp
 
     return opts;
 }
+*/

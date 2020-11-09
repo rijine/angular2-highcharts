@@ -15,3 +15,6 @@ export declare class HighchartsServiceMock {
         StockChart: typeof HighchartsChartObjectMock;
     };
 }
+export declare class ChartServiceMock {
+    init(): {};
+}
